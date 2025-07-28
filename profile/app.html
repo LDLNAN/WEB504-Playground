@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <!--META CHARSET, VIEWPOINT FOR MOBILE, SEO TAGS-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Lucas Donald - Software Developer. Explore skills, projects and contact information.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Donald | Profile, Skills, & Projects</title>
+
+    <!-- SEO: Open Graph for better social media sharing -->
+     <meta property="og:title" content="Lucas Donald | Profile, Skills, & Projects">
+     <meta property="og:description" content="Lucas Donald - Software Developer. Explore skills, projects, and contact information.">
+     <meta property="og:image" content="">
+     <meta property="og:type" content="website">
+
+     <!--Link to external CSS-->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Main header & navigation-->
+    <header class="sticky-header" role="banner">
+    <!--Site title with id and keyboard focus-->
+    <h1 id="main-title" tabindex="0">Lucas' Profile </h1>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <!--Target="_blank" opens link in new tabs-->
+                <li><a href="#contact" class="nav-link" target="_blank" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main page content-->
+    <main id="main">
+     <!--About Me section-->       
+     <section id="about" class="card animated">
+        <img src="../src/img/minion.png" alt="Self portrait" class="profile-img">
+        <h2 id="about-heading">About me</h2>
+        <p>Hello</p>
+        <!--Hobbies as inline list-->
+        <ul class="hobbies">
+            <li>Tiddies</li>
+            <li>Mo' tiddies</li>
+        </ul>
+     </section>
+
+     <!--Skills Section with pulse animation on hover-->
+     <section id="skills" class="card">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="flex-container">
+            <li class="skill-item pulse-on-hover">HTML</li>
+            <li class="skill-item pulse-on-hover">CSS</li>
+            <li class="skill-item pulse-on-hover">JavaScript</li>
+        </ul>
+     </section>
+
+     <!--Projects Section with grid and slide-in animation-->
+     <section id="projects" class="card grid-container">
+        <!--Heading will be hidden for screen readers only-->
+        <h2 id="projects-heading" class="visually-hidden">Projects</h2>
+        <div class="project slide-in-left">
+            <h3>MIA</h3>
+            <h3>N/A</h3>
+            <h3>DNF</h3>
+        </div>
+        <div class="project slide-in-right">
+            <h3>IDK</h3>
+            <h3>IDC</h3>
+        </div>
+     </section>
+
+     <!--Contact form, with accesible labels and require fields-->
+     <section id="contact" class="card">
+        <h2 id="contact-heading">Contact Me</h2>
+        <form autocomplete="on">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email..." required aria-required="true">
+
+            <button class="button" type="submit">Send</button>
+            <button class="button secondary" type="reset">Reset</button>
+
+        </form>
+     </section>
+    </main>
+
+    <!--Page footer with structured data for SEO-->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Lucas Donald</p>
+        <script type="application/ld+json"></script>
+
+
+    </footer>
+
+
+</body>
+</html>
