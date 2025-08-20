@@ -1,0 +1,31 @@
+/* side.css - Optional extra styles for custom video player */
+
+/* Example: Add a subtle shadow to the controls on hover */
+.controls:hover {
+  box-shadow: 0 4px 24px rgba(239,131,84,0.10);
+}
+
+/* Example: Style the play/stop icons for a little pop */
+.btn i {
+  transition: color 0.2s, transform 0.2s;
+}
+.btn:active i {
+  color: #fff;
+  transform: scale(1.15);
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+  .screen, .controls {
+    max-width: 98vw;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+  }
+  .progress {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
